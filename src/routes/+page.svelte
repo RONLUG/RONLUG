@@ -1,10 +1,13 @@
-<h1>Welcome to your library project</h1>
-<p>
-  Create your package using @sveltejs/package and preview/showcase your work
-  with SvelteKit
-</p>
-<p>
-  Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
+<script>
+  import About from "$lib/sections/About.svelte"
+  import Hero from "$lib/sections/Hero.svelte"
+  import Projects from "$lib/sections/Projects.svelte"
+  import Appendix from "$lib/sections/Appendix.svelte"
+</script>
 
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<main>
+  <Hero></Hero>
+  <About></About>
+  <Projects></Projects>
+  <Appendix></Appendix>
+</main>
