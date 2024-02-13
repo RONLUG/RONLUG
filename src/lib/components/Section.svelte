@@ -1,8 +1,8 @@
 <script>
-    import { twMerge } from 'tailwind-merge'
-    export let clazz = ""
+    import { twMerge } from "tailwind-merge";
+    export let clazz = "";
 </script>
 
-<div class={twMerge("flex m-auto w-9/12 max-w-screen-lg", clazz)}>
-    <slot></slot>
+<div class={twMerge("m-auto flex w-10/12 max-w-screen-2xl py-20", clazz)}>
+    <slot />
 </div>
