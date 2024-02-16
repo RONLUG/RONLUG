@@ -14,7 +14,7 @@
     <img
         loading="lazy"
         slot="image"
-        src={shownProject?.img ? "/src/lib/img/" + shownProject.img : "/src/lib/img/portrait.jpg"}
+        src={shownProject?.img ? "src/lib/img/" + shownProject.img : "src/lib/img/portrait.jpg"}
         alt="img"
         class="h-full select-none object-cover"
     />

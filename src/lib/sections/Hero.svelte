@@ -5,7 +5,7 @@
 <Section clazz="w-screen h-screen justify-center items-center">
     <div class="flex w-full flex-col items-center justify-center gap-x-16 gap-y-5 xl:w-2/3 xl:flex-row">
         <div class="image-container">
-            <img src="./src/lib/img/portrait.jpg" class="bg-cover" alt="portrait" />
+            <img src="src/lib/img/portrait.jpg" class="bg-cover" alt="portrait" />
         </div>
         <div class="mx-12 flex flex-col">
             <h1 class="text-5xl font-extrabold">Hello, <br /> Call Me Ronnakorn</h1>
