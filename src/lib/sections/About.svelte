@@ -11,9 +11,9 @@
                 Ronnakorn Lugsamipichate <span class="font-normal">(Au)</span>
             </h1>
             <p>
-                I'm a soon-to-be graduate Computer Engineering student in 2025, with fundamental knowledge of software
-                development processes and tools. I'm looking forward to gaining real-world experience to further improve
-                my knowledge.
+                Hello! I am a soon-to-be graduate Computer Engineering student in 2025. I possess fundamental knowledge
+                of software development processes and tools. Currently, I am seeking an internship in a software
+                engineering position. I am eager to seize learning opportunities and gain real-world experience.
             </p>
             <h1 class="my-3 mt-6 text-3xl font-bold">What Can I Do?</h1>
             <ul class="flex flex-wrap items-center justify-center gap-3">
@@ -36,7 +36,7 @@
                 <Card clazz="row-span-2" header="Lived" detail="Bangkok Noi, Bangkok">
                     <Icon class="text-2xl" slot="icon" icon="material-symbols:where-to-vote" />
                 </Card>
-                <Card header="GPA" detail="3.29*">
+                <Card header="GPA" detail="3.28*">
                     <Icon class="text-2xl" slot="icon" icon="material-symbols:where-to-vote" />
                 </Card>
                 <Card header="English" detail="A2**">

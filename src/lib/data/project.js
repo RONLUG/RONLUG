@@ -2,22 +2,22 @@ export const PROJECTS = [
   {
     name: "Bob's Tasks",
     img: "bobstasks.png",
-    desc: "Bob’s task is a task management application developed under Software engineering course at the university. This project main purpose is to study the software development process, in this project me and my colleagues opted waterfall process in the devlopement",
+    desc: "Bob’s Task is a task management application developed as part of a Software Engineering course at the university. The main purpose of this project is to study the software development process. For my team, consisting of four colleagues and myself, we opted for the waterfall process in the development.",
     details: [
       {
         header: "Application Features",
         bullets: [
           "Allow users to create and manage projects and task inside the project",
-          "Allow users to manage tasks in multiple view (List and kanban board)",
+          "Enable users to manage tasks through multiple view (List and kanban board)",
         ],
       },
       {
         header: "Responsibility",
-        bullets: ["Write application requirements", "Develop application"],
+        bullets: ["Specified the application requirements", "Develop application"],
       },
       {
         header: "Tools",
-        bullets: ["Using git/github for version control", "Develop using svelte-kit framework"],
+        bullets: ["figma", "github", "sveltekit", "supabase"],
       },
     ],
     links: [
@@ -37,22 +37,21 @@ export const PROJECTS = [
   {
     name: "Bangmod hackathon 2024",
     img: "bmh2024.png",
-    desc: "Bob’s task is a task management application developed under Software engineering course at the university. This project main purpose is to study the software development process, in this project me and my colleagues opted waterfall process in the devlopement",
+    desc: "Bangmod hackathon is a competitive programming event for high schools organized by undergraduate computer engineering students at KMUTT.",
     details: [
       {
-        header: "Application Features",
+        header: "Team",
         bullets: [
-          "Allow users to create and manage projects and task inside the project",
-          "Allow users to manage tasks in multiple view (List and kanban board)",
+          "I was part of a team of around 10 colleagues responsible for developing the website to promote the event and allow participants to apply.",
         ],
       },
       {
         header: "Responsibility",
-        bullets: ["Write application requirements", "Develop application"],
+        bullets: ["Created UI components"],
       },
       {
         header: "Tools",
-        bullets: ["Using git/github for version control", "Develop using svelte-kit framework"],
+        bullets: ["github", "sveltekit", "supabase"],
       },
     ],
     links: [
@@ -67,22 +66,19 @@ export const PROJECTS = [
   {
     name: "Depa game accelerator program batch 3",
     img: "dpga.png",
-    desc: "Bob’s task is a task management application developed under Software engineering course at the university. This project main purpose is to study the software development process, in this project me and my colleagues opted waterfall process in the devlopement",
+    desc: "The Depa Game Accelerator program offers game developers a boot camp and the opportunity to present their game ideas and prototypes. I teamed up with my high school friends and qualified for the program in the amateur category.",
     details: [
       {
-        header: "Application Features",
-        bullets: [
-          "Allow users to create and manage projects and task inside the project",
-          "Allow users to manage tasks in multiple view (List and kanban board)",
-        ],
+        header: "Team",
+        bullets: ["My team consist group of 5 people, and I was taken a role of for team programmer."],
       },
       {
         header: "Responsibility",
-        bullets: ["Write application requirements", "Develop application"],
+        bullets: ["Designed game mechanics", "Developed game prototypes", "Developed game website"],
       },
       {
         header: "Tools",
-        bullets: ["Using git/github for version control", "Develop using svelte-kit framework"],
+        bullets: ["figma", "unity", "github"],
       },
     ],
     links: [{ type: "website", name: "echoes-of-the-sea.vercel.app", url: "https://echoes-of-the-sea.vercel.app/" }],
@@ -91,22 +87,24 @@ export const PROJECTS = [
   {
     name: "Stonk Game Store",
     img: "stonk.png",
-    desc: "Bob’s task is a task management application developed under Software engineering course at the university. This project main purpose is to study the software development process, in this project me and my colleagues opted waterfall process in the devlopement",
+    desc: "Stonk Game Store is a game store application (similar to itch.io) developed as part of a Database Management System course at the university. The main purpose of this project is to study CRUD operations and database systems.",
     details: [
       {
         header: "Application Features",
         bullets: [
-          "Allow users to create and manage projects and task inside the project",
-          "Allow users to manage tasks in multiple view (List and kanban board)",
+          "Allow users to browse games on the store.",
+          "Enable users to add games to their library.",
+          "Allow game publishers to publish and manage their games.",
+          "Provide game publishers with access to a dashboard.",
         ],
       },
       {
         header: "Responsibility",
-        bullets: ["Write application requirements", "Develop application"],
+        bullets: ["Designed ER diagram.", "Designed UI.", "Developed application."],
       },
       {
         header: "Tools",
-        bullets: ["Using git/github for version control", "Develop using svelte-kit framework"],
+        bullets: ["figma", "github", "sveltekit", "supabase"],
       },
     ],
     links: [
@@ -121,22 +119,19 @@ export const PROJECTS = [
   {
     name: "Course Meadow",
     img: "courseMeadow.png",
-    desc: "Bob’s task is a task management application developed under Software engineering course at the university. This project main purpose is to study the software development process, in this project me and my colleagues opted waterfall process in the devlopement",
+    desc: "Course Meadow is an online course hosting application created as part of the CS50x course.",
     details: [
       {
         header: "Application Features",
-        bullets: [
-          "Allow users to create and manage projects and task inside the project",
-          "Allow users to manage tasks in multiple view (List and kanban board)",
-        ],
+        bullets: ["Allow users to create online course", "Allow users to browse and enroll others online course"],
       },
       {
         header: "Responsibility",
-        bullets: ["Write application requirements", "Develop application"],
+        bullets: ["Designed UI of the application", "Developed the application"],
       },
       {
         header: "Tools",
-        bullets: ["Using git/github for version control", "Develop using svelte-kit framework"],
+        bullets: ["figma", "flask", "docker", "github"],
       },
     ],
     links: [
