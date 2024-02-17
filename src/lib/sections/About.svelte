@@ -10,7 +10,7 @@
             <h1 class="mb-3 text-3xl font-bold">
                 Ronnakorn Lugsamipichate <span class="font-normal">(Au)</span>
             </h1>
-            <p>
+            <p class="text-slate-700">
                 Hello! I am a soon-to-be graduate Computer Engineering student in 2025. I possess fundamental knowledge
                 of software development processes and tools. Currently, I am seeking an internship in a software
                 engineering position. I am eager to seize learning opportunities and gain real-world experience.

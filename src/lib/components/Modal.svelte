@@ -16,7 +16,7 @@
         <div class="flex-shrink-0 basis-5/12">
             <slot name="image" />
         </div>
-        <div class="flex-shrink basis-7/12 p-6">
+        <div class="flex-shrink basis-7/12 p-10 pr-14">
             <slot />
         </div>
     </div>

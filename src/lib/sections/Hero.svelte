@@ -9,7 +9,7 @@
         </div>
         <div class="flex flex-col">
             <h1 class="px-12 text-5xl font-extrabold xl:px-0">Hello, <br /> Call Me Ronnakorn</h1>
-            <p class="px-12 xl:px-0">University student graduated in 2025, Front-end developer</p>
+            <p class="px-12 text-slate-500 xl:px-0">University student graduated in 2025, Front-end developer</p>
         </div>
     </div>
 </Section>
