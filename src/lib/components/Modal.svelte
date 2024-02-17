@@ -12,7 +12,7 @@
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
 <dialog bind:this={dialog} on:click|self={() => dialog.close()} class={clazz}>
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div on:click|stopPropagation class="flex min-h-[35rem] flex-row">
+    <div on:click|stopPropagation class="flex min-h-[35rem] flex-col md:flex-row">
         <div class="flex-shrink-0 basis-5/12">
             <slot name="image" />
         </div>
