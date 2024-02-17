@@ -3,21 +3,27 @@
     import Project from "$lib/components/Project.svelte";
     import Section from "$lib/components/Section.svelte";
     import { PROJECTS as projects } from "$lib/data/project";
+    import bmh2024 from "$lib/img/bmh2024.png";
+    import bobstasks from "$lib/img/bobstasks.png";
+    import dpga from "$lib/img/dpga.png";
+    import stonk from "$lib/img/stonk.png";
+    import courseMeadow from "$lib/img/courseMeadow.png";
 
-    console.log(projects);
+    const images = {
+        bmh2024: bmh2024,
+        bobstasks: bobstasks,
+        dpga: dpga,
+        stonk: stonk,
+        courseMeadow: courseMeadow,
+    };
+
     let modal;
     let shownProject = {};
-    $: console.log(shownProject);
 </script>
 
+<!-- src={shownProject?.img ? "/img/" + shownProject.img : "/img/portrait.jpg"} -->
 <Modal bind:this={modal} clazz="rounded-md w-[60rem]">
-    <img
-        loading="lazy"
-        slot="image"
-        src={shownProject?.img ? "/img/" + shownProject.img : "/img/portrait.jpg"}
-        alt="img"
-        class="h-full select-none object-cover"
-    />
+    <img loading="lazy" slot="image" src={images[shownProject.img]} alt="img" class="h-full select-none object-cover" />
     <h1 class="text-2xl font-bold">
         {shownProject.name}
     </h1>

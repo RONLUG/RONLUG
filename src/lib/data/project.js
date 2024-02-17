@@ -1,7 +1,7 @@
 export const PROJECTS = [
   {
     name: "Bob's Tasks",
-    img: "bobstasks.png",
+    img: "bobstasks",
     desc: "Bob’s Task is a task management application developed as part of a Software Engineering course at the university. The main purpose of this project is to study the software development process. For my team, consisting of four colleagues and myself, we opted for the waterfall process in the development.",
     details: [
       {
@@ -36,7 +36,7 @@ export const PROJECTS = [
   },
   {
     name: "Bangmod hackathon 2024",
-    img: "bmh2024.png",
+    img: "bmh2024",
     desc: "Bangmod hackathon is a competitive programming event for high schools organized by undergraduate computer engineering students at KMUTT.",
     details: [
       {
@@ -65,7 +65,7 @@ export const PROJECTS = [
   },
   {
     name: "Depa game accelerator program batch 3",
-    img: "dpga.png",
+    img: "dpga",
     desc: "The Depa Game Accelerator program offers game developers a boot camp and the opportunity to present their game ideas and prototypes. I teamed up with my high school friends and qualified for the program in the amateur category.",
     details: [
       {
@@ -86,7 +86,7 @@ export const PROJECTS = [
   },
   {
     name: "Stonk Game Store",
-    img: "stonk.png",
+    img: "stonk",
     desc: "Stonk Game Store is a game store application (similar to itch.io) developed as part of a Database Management System course at the university. The main purpose of this project is to study CRUD operations and database systems.",
     details: [
       {
@@ -118,7 +118,7 @@ export const PROJECTS = [
   },
   {
     name: "Course Meadow",
-    img: "courseMeadow.png",
+    img: "courseMeadow",
     desc: "Course Meadow is an online course hosting application created as part of the CS50x course.",
     details: [
       {
