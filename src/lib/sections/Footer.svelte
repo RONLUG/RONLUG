@@ -3,8 +3,8 @@
     import "iconify-icon";
 </script>
 
-<Section clazz="pb-10 gap-20">
-    <footer class="flex flex-row gap-20">
+<Section clazz="flex-col py-6 justify-center items-center mt-20 bg-slate-50">
+    <footer class="flex w-11/12 flex-row gap-32 xl:w-2/3">
         <div>
             <h2 class="text-2xl font-semibold">Get In Touch</h2>
             <ul>

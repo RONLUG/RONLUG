@@ -3,6 +3,6 @@
     export let clazz = "";
 </script>
 
-<div class={twMerge("m-auto flex w-10/12 max-w-screen-2xl py-20", clazz)}>
+<div class={twMerge("flex w-full px-20 py-20 xl:px-40", clazz)}>
     <slot />
 </div>

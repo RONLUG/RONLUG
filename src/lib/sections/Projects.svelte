@@ -8,6 +8,7 @@
     import dpga from "$lib/img/dpga.png";
     import stonk from "$lib/img/stonk.png";
     import courseMeadow from "$lib/img/courseMeadow.png";
+    import Icon from "@iconify/svelte";
 
     const images = {
         bmh2024: bmh2024,
@@ -24,37 +25,70 @@
 <!-- src={shownProject?.img ? "/img/" + shownProject.img : "/img/portrait.jpg"} -->
 <Modal bind:this={modal} clazz="rounded-md w-[60rem]">
     <img loading="lazy" slot="image" src={images[shownProject.img]} alt="img" class="h-full select-none object-cover" />
-    <h1 class="text-2xl font-bold">
-        {shownProject.name}
-    </h1>
-    {#if shownProject.details}
-        <ul>
-            {#each shownProject.details as projectDetail}
-                <li>
-                    <h1 class="text-xl font-semibold">
-                        {projectDetail.header}
-                    </h1>
-                    <ul class="list-disc pl-5">
-                        {#each projectDetail.bullets as bullet}
-                            <li>
-                                {bullet}
-                            </li>
-                        {/each}
-                    </ul>
+    <div class="p-6 pl-4">
+        <div class="mb-3">
+            <h1 class="text-2xl font-bold">
+                {shownProject.name}
+            </h1>
+            <p class="text-slate-800">{shownProject.desc}</p>
+        </div>
+        {#if shownProject.details}
+            <ul>
+                {#each shownProject.details as projectDetail}
+                    <li>
+                        <h1 class="text-xl font-semibold">
+                            {projectDetail.header}
+                        </h1>
+                        <ul class="list-disc pl-5 text-slate-800">
+                            {#each projectDetail.bullets as bullet}
+                                <li>
+                                    {bullet}
+                                </li>
+                            {/each}
+                        </ul>
+                    </li>
+                {/each}
+                <li class="mb-3">
+                    <h1 class="text-xl font-semibold">Tools</h1>
+                    <div class="ml-1 flex gap-3 text-3xl text-slate-500">
+                        {#if shownProject.tools?.includes("unity")}
+                            <Icon icon="mdi:unity" />
+                        {/if}
+                        {#if shownProject.tools?.includes("figma")}
+                            <Icon icon="solar:figma-broken" />
+                        {/if}
+                        {#if shownProject.tools?.includes("sveltekit")}
+                            <Icon icon="ri:svelte-fill" />
+                        {/if}
+                        {#if shownProject.tools?.includes("github")}
+                            <Icon icon="mdi:git" />
+                        {/if}
+                        {#if shownProject.tools?.includes("supabase")}
+                            <Icon icon="ri:supabase-line" />
+                        {/if}
+                        {#if shownProject.tools?.includes("flask")}
+                            <Icon icon="bxl:flask" />
+                        {/if}
+                    </div>
                 </li>
-            {/each}
-            {#if shownProject.links}
-                <h1>Links</h1>
-                <ul>
-                    {#each shownProject.links as link}
-                        <li>
-                            <a href={link.url} target="_blank">{link.name ?? link.url}</a>
-                        </li>
-                    {/each}
-                </ul>
-            {/if}
-        </ul>
-    {/if}
+                {#if shownProject.links}
+                    <li>
+                        <h1 class="text-xl font-semibold">Links</h1>
+                        <ul>
+                            {#each shownProject.links as link}
+                                <li class="flex items-center">
+                                    <Icon class="ml-1 mr-1 text-[14px] text-slate-500" icon="dashicons:admin-links" />
+                                    <a class="text-slate-800 hover:underline" href={link.url} target="_blank"
+                                        >{link.name ?? link.url}</a
+                                    >
+                                </li>
+                            {/each}
+                        </ul>
+                    </li>
+                {/if}
+            </ul>
+        {/if}
+    </div>
 </Modal>
 
 <Section clazz="flex-col py-6 justify-center items-center">

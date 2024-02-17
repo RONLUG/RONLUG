@@ -34,17 +34,17 @@
         <div class="max-w-lg basis-1/2 flex-col items-center justify-evenly">
             <div class="mb-3 grid grid-cols-3 gap-3">
                 <Card clazz="row-span-2" header="Lived" detail="Bangkok Noi, Bangkok">
-                    <Icon class="text-2xl" slot="icon" icon="material-symbols:where-to-vote" />
+                    <Icon slot="icon" icon="material-symbols:where-to-vote" />
                 </Card>
                 <Card header="GPA" detail="3.28*">
-                    <Icon class="text-2xl" slot="icon" icon="material-symbols:where-to-vote" />
+                    <Icon slot="icon" icon="mdi:academic-cap" />
                 </Card>
                 <Card header="English" detail="A2**">
-                    <Icon class="text-2xl" slot="icon" icon="material-symbols:where-to-vote" />
+                    <Icon slot="icon" icon="clarity:language-solid" />
                 </Card>
                 <Card clazz="col-span-2" header="Studing">
-                    <Icon class="text-2xl" slot="icon" icon="material-symbols:where-to-vote" />
-                    <p class="text-center">Studing Computer Engineering At KMUTT</p>
+                    <Icon slot="icon" icon="teenyicons:school-solid" />
+                    <p class="text-center text-slate-600">Studing Computer Engineering At KMUTT</p>
                 </Card>
             </div>
             <ul>

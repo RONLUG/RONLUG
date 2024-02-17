@@ -15,11 +15,8 @@ export const PROJECTS = [
         header: "Responsibility",
         bullets: ["Specified the application requirements", "Develop application"],
       },
-      {
-        header: "Tools",
-        bullets: ["figma", "github", "sveltekit", "supabase"],
-      },
     ],
+    tools: ["figma", "github", "sveltekit", "supabase"],
     links: [
       {
         type: "website",
@@ -49,11 +46,8 @@ export const PROJECTS = [
         header: "Responsibility",
         bullets: ["Created UI components"],
       },
-      {
-        header: "Tools",
-        bullets: ["github", "sveltekit", "supabase"],
-      },
     ],
+    tools: ["github", "sveltekit", "supabase"],
     links: [
       {
         type: "website",
@@ -76,11 +70,8 @@ export const PROJECTS = [
         header: "Responsibility",
         bullets: ["Designed game mechanics", "Developed game prototypes", "Developed game website"],
       },
-      {
-        header: "Tools",
-        bullets: ["figma", "unity", "github"],
-      },
     ],
+    tools: ["figma", "unity", "github"],
     links: [{ type: "website", name: "echoes-of-the-sea.vercel.app", url: "https://echoes-of-the-sea.vercel.app/" }],
     year: 2023,
   },
@@ -102,11 +93,8 @@ export const PROJECTS = [
         header: "Responsibility",
         bullets: ["Designed ER diagram.", "Designed UI.", "Developed application."],
       },
-      {
-        header: "Tools",
-        bullets: ["figma", "github", "sveltekit", "supabase"],
-      },
     ],
+    tools: ["figma", "github", "sveltekit", "supabase"],
     links: [
       {
         type: "website",
@@ -129,11 +117,8 @@ export const PROJECTS = [
         header: "Responsibility",
         bullets: ["Designed UI of the application", "Developed the application"],
       },
-      {
-        header: "Tools",
-        bullets: ["figma", "flask", "docker", "github"],
-      },
     ],
+    tools: ["figma", "flask", "docker", "github"],
     links: [
       {
         type: "Video",
