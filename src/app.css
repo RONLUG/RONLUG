@@ -3,5 +3,27 @@
 @tailwind utilities;
 
 * {
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
+}
+
+@layer components {
+    .transition-opacity-transform {
+        transition-property: opacity, transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+
+    .transition-opacity.shown {
+        opacity: 100%;
+    }
+
+    .transition-transform.shown {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+    .transition-opacity-transform.shown {
+        opacity: 100%;
+        transform: translateX(0);
+        transform: translateY(0);
+    }
 }

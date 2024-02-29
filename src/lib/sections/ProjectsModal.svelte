@@ -22,6 +22,7 @@
     let shownProject = {};
 </script>
 
+<!-- src={shownProject?.img ? "/img/" + shownProject.img : "/img/portrait.jpg"} -->
 <Modal bind:this={modal} clazz="rounded-md w-[60rem]">
     <img slot="image" src={images[shownProject.img]} alt="img" class="h-full select-none object-cover" />
     <div class="mb-3">

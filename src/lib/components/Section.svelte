@@ -1,8 +1,11 @@
 <script>
     import { twMerge } from "tailwind-merge";
-    export let clazz = "";
+    let clazz = $$props.class;
+    let outerClass = $$props.outerClass;
 </script>
 
-<div class={twMerge("flex w-full px-20 py-20 xl:px-40", clazz)}>
-    <slot />
-</div>
+<section class={twMerge("w-full py-20", outerClass)}>
+    <div class={twMerge("m-auto flex  w-10/12 max-w-screen-xl flex-col xl:w-8/12", clazz)}>
+        <slot />
+    </div>
+</section>
