@@ -20,86 +20,29 @@
 
     let modal;
     let shownProject = {};
-</script>
 
-<Modal bind:this={modal} clazz="rounded-md w-[60rem]">
-    <img slot="image" src={images[shownProject.img]} alt="img" class="h-full select-none object-cover" />
-    <div class="mb-3">
-        <h1 class="text-2xl font-bold">
-            {shownProject.name}
-        </h1>
-        <p class="text-slate-700">{shownProject.desc}</p>
-    </div>
-    {#if shownProject.details}
-        <ul>
-            {#each shownProject.details as projectDetail}
-                <li>
-                    <h1 class="text-xl font-semibold">
-                        {projectDetail.header}
-                    </h1>
-                    <ul class="list-disc pl-5 text-slate-700 marker:text-slate-500">
-                        {#each projectDetail.bullets as bullet}
-                            <li class="">
-                                {bullet}
-                            </li>
-                        {/each}
-                    </ul>
-                </li>
-            {/each}
-            <li class="mb-3">
-                <h1 class="text-xl font-semibold">Tools</h1>
-                <div class="ml-1 flex gap-3 text-3xl text-slate-500">
-                    {#if shownProject.tools?.includes("unity")}
-                        <Icon icon="mdi:unity" />
-                    {/if}
-                    {#if shownProject.tools?.includes("figma")}
-                        <Icon icon="solar:figma-broken" />
-                    {/if}
-                    {#if shownProject.tools?.includes("sveltekit")}
-                        <Icon icon="ri:svelte-fill" />
-                    {/if}
-                    {#if shownProject.tools?.includes("github")}
-                        <Icon icon="mdi:git" />
-                    {/if}
-                    {#if shownProject.tools?.includes("supabase")}
-                        <Icon icon="ri:supabase-line" />
-                    {/if}
-                    {#if shownProject.tools?.includes("flask")}
-                        <Icon icon="bxl:flask" />
-                    {/if}
-                </div>
-            </li>
-            {#if shownProject.links}
-                <li>
-                    <h1 class="text-xl font-semibold">Links</h1>
-                    <ul>
-                        {#each shownProject.links as link}
-                            <li class="flex items-center">
-                                <Icon class="ml-1 mr-1 text-[14px] text-slate-500" icon="dashicons:admin-links" />
-                                <a class="text-slate-700 hover:underline" href={link.url} target="_blank"
-                                    >{link.name ?? link.url}</a
-                                >
-                            </li>
-                        {/each}
-                    </ul>
-                </li>
-            {/if}
-        </ul>
-    {/if}
-</Modal>
+    let d2023;
+    let d2022;
+
+    console.log(projects[0].year);
+    if (projects) {
+        d2023 = projects.filter((e) => e.year == 2023);
+        d2022 = projects.filter((e) => e.year == 2022);
+    }
+
+    let projectAnimationDelay = 0;
+</script>
 
 <Section class="items-left" outerClass="space-between">
     <h1 class="text-3xl font-bold">Projects</h1>
-    {#each projects as project}
-        <div class="project-container">
-            <Project
-                clazz="focus:outline-none text-left"
-                data={project}
-                on:click={() => {
-                    modal.openModal();
-                    shownProject = project;
-                }}
-            ></Project>
-        </div>
-    {/each}
+    <div class="mt-6">
+        <h2 class="ml-8 text-3xl font-extrabold text-slate-700">2023</h2>
+        {#each d2023 as project}
+            <Project class="text-left focus:outline-none" data={project}></Project>
+        {/each}
+        <h2 class="ml-8 text-3xl font-extrabold text-slate-700">2022</h2>
+        {#each d2022 as project}
+            <Project class="text-left focus:outline-none" data={project}></Project>
+        {/each}
+    </div>
 </Section>

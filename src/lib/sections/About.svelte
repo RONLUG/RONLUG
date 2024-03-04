@@ -18,10 +18,10 @@
         <h1 class="my-3 mt-6 text-3xl font-bold">What Can I Do?</h1>
         <ul class="flex flex-wrap items-center justify-center gap-3">
             <li>
-                <Icon class="mx-8 text-[60px]" icon="logos:flask" />
+                <Icon class="mx-4 text-[55px]" icon="logos:flask" />
             </li>
             <li>
-                <Icon class="text-[45px]" icon="logos:django" />
+                <Icon class="text-[40px]" icon="logos:django" />
             </li>
             <li>
                 <Icon class="text-[100px]" icon="devicon-plain:svelte-wordmark" />

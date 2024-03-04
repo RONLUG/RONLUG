@@ -2,6 +2,7 @@ export const PROJECTS = [
   {
     name: "Bob's Tasks",
     img: "bobstasks",
+    shortDesc: "Developed a task management application using svelte-kit framework and Supabase.",
     desc: "Bob’s Task is a task management application developed as part of a Software Engineering course at the university. The main purpose of this project is to study the software development process. For my team, consisting of four colleagues and myself, we opted for the waterfall process in the development.",
     details: [
       {
@@ -34,6 +35,7 @@ export const PROJECTS = [
   {
     name: "Bangmod hackathon 2024",
     img: "bmh2024",
+    shortDesc: "Created UI components for BMH2024 camp website using svelte-kit framework and Supabase.",
     desc: "Bangmod hackathon is a competitive programming event for high schools organized by undergraduate computer engineering students at KMUTT.",
     details: [
       {
@@ -60,6 +62,8 @@ export const PROJECTS = [
   {
     name: "Depa game accelerator program batch 3",
     img: "dpga",
+    shortDesc:
+      "Created game concept website and game mechanic prototypes using vanilla html, css, javascript and unity game engine.",
     desc: "The Depa Game Accelerator program offers game developers a boot camp and the opportunity to present their game ideas and prototypes. I teamed up with my high school friends and qualified for the program in the amateur category.",
     details: [
       {
@@ -78,6 +82,7 @@ export const PROJECTS = [
   {
     name: "Stonk Game Store",
     img: "stonk",
+    shortDesc: "Developed a task management application using svelte-kit framework and Supabase.",
     desc: "Stonk Game Store is a game store application (similar to itch.io) developed as part of a Database Management System course at the university. The main purpose of this project is to study CRUD operations and database systems.",
     details: [
       {
@@ -107,6 +112,7 @@ export const PROJECTS = [
   {
     name: "Course Meadow",
     img: "courseMeadow",
+    shortDesc: "Developed an online course publishing application using flask framework and SQLite.",
     desc: "Course Meadow is an online course hosting application created as part of the CS50x course.",
     details: [
       {
