@@ -67,6 +67,7 @@
                                 {/each}
                             </ul>
                             <img
+                                on:load={console.log("image loaded")}
                                 class="w-[300px] self-center"
                                 src={imageDefaultPath + data.img + ".png"}
                                 alt="project"
