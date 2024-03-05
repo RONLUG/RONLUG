@@ -37,7 +37,7 @@
                 <h3 class="text-2xl font-semibold">{data.name}</h3>
                 <p>{data.shortDesc}</p>
                 <div class="w-full overflow-hidden">
-                    <div bind:this={expandContainer} class="project-details mt-[-100rem] transition-all duration-700">
+                    <div bind:this={expandContainer} class="project-details mt-[-200rem] transition-all duration-700">
                         <div class=" flex flex-col items-start justify-between gap-10 lg:flex-row">
                             <ul class="">
                                 <li>
@@ -59,11 +59,11 @@
                                     </li>
                                 {/each}
                             </ul>
-                            <img
+                            <!-- <img
                                 class="w-[300px] self-center"
                                 src={imageDefaultPath + data.img + ".png"}
                                 alt="project"
-                            />
+                            /> -->
                         </div>
 
                         <ul class="mt-4 flex gap-2">
