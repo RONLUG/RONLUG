@@ -1,5 +1,5 @@
 <script>
-    import { PROJECTS as projects } from "$lib/data/project";
+    import { PROJECTS as projects } from "$lib/scripts/project";
     import Section from "$lib/components/Section.svelte";
 
     let shownProject = projects[2];
