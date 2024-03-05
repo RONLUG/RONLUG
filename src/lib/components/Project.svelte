@@ -19,6 +19,8 @@
 
     $: if (expandContainer && expandContainer.offsetHeight) {
         innerWidth;
+        console.log("$ Margin Added: ", expandContainer.style.marginTop);
+        console.log("$ Offset: ", expandContainer.offsetHeight);
         expandContainer.style.marginTop = !reveal ? `${-expandContainer.offsetHeight}px` : "0";
     }
 </script>
