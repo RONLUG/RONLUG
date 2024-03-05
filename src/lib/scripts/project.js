@@ -35,7 +35,7 @@ export const PROJECTS = [
   {
     name: "Bangmod hackathon 2024",
     img: "bmh2024",
-    shortDesc: "Created UI components for BMH2024 camp website using svelte-kit framework and Supabase.",
+    shortDesc: "Created UI components for BMH2024 camp website using svelte-kit framework.",
     desc: "Bangmod hackathon is a competitive programming event for high schools organized by undergraduate computer engineering students at KMUTT.",
     details: [
       {
