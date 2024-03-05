@@ -4,10 +4,15 @@
     const imageDefaultPath = "img/";
     import Icon from "@iconify/svelte";
     import { viewport } from "$lib/scripts/viewportAction";
+    import { onMount } from "svelte";
     let innerWidth;
     let reveal = false;
     let clazz = $$props.class;
     let expandContainer;
+    onMount(() => {
+        expandContainer.style.marginTop = !reveal ? `${-expandContainer.offsetHeight}px` : "0";
+    });
+
     $: if (expandContainer && expandContainer.offsetHeight) {
         innerWidth;
         expandContainer.style.marginTop = !reveal ? `${-expandContainer.offsetHeight}px` : "0";
@@ -59,11 +64,11 @@
                                     </li>
                                 {/each}
                             </ul>
-                            <!-- <img
+                            <img
                                 class="w-[300px] self-center"
                                 src={imageDefaultPath + data.img + ".png"}
                                 alt="project"
-                            /> -->
+                            />
                         </div>
 
                         <ul class="mt-4 flex gap-2">
@@ -88,7 +93,7 @@
 </div>
 
 <style>
-    .reveal .project-details {
+    /* .reveal .project-details {
         margin-top: 0%;
-    }
+    } */
 </style>
