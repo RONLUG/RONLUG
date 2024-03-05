@@ -11,6 +11,8 @@
     let expandContainer;
     onMount(() => {
         expandContainer.style.marginTop = !reveal ? `${-expandContainer.offsetHeight}px` : "0";
+        console.log("Margin Added: ", expandContainer.style.marginTop);
+        console.log("Offset: ", expandContainer.offsetHeight);
     });
 
     $: if (expandContainer && expandContainer.offsetHeight) {
