@@ -10,9 +10,11 @@
     let clazz = $$props.class;
     let expandContainer;
     onMount(() => {
-        expandContainer.style.marginTop = !reveal ? `${-expandContainer.offsetHeight}px` : "0";
         console.log("Margin Added: ", expandContainer.style.marginTop);
         console.log("Offset: ", expandContainer.offsetHeight);
+        expandContainer.style.marginTop = !reveal ? `${-expandContainer.offsetHeight}px` : "0";
+        reveal = !reveal;
+        reveal = !reveal;
     });
 
     $: if (expandContainer && expandContainer.offsetHeight) {
