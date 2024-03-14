@@ -9,20 +9,20 @@
     let reveal = false;
     let clazz = $$props.class;
     let expandContainer;
-    onMount(() => {
-        console.log("Margin Added: ", expandContainer.style.marginTop);
-        console.log("Offset: ", expandContainer.offsetHeight);
+
+    function imageLoad() {
         expandContainer.style.marginTop = !reveal ? `${-expandContainer.offsetHeight}px` : "0";
-        reveal = !reveal;
-        reveal = !reveal;
-    });
+    }
 
     $: if (expandContainer && expandContainer.offsetHeight) {
         innerWidth;
-        console.log("$ Margin Added: ", expandContainer.style.marginTop);
-        console.log("$ Offset: ", expandContainer.offsetHeight);
         expandContainer.style.marginTop = !reveal ? `${-expandContainer.offsetHeight}px` : "0";
     }
+
+    onMount(() => {
+        const myImage = document.getElementById("loadImage");
+        myImage.addEventListener("load", imageLoad);
+    });
 </script>
 
 <svelte:window bind:innerWidth />
@@ -71,13 +71,14 @@
                                 {/each}
                             </ul>
                             <img
-                                on:load={console.log("image loaded")}
+                                id="loadImage"
                                 class="w-[300px] self-center"
-                                src={imageDefaultPath + data.img + ".png"}
+                                src="https://picsum.photos/300/400"
                                 alt="project"
                             />
                         </div>
 
+                        <!-- src={imageDefaultPath + data.img + ".png"} -->
                         <ul class="mt-4 flex gap-2">
                             {#each data.links as link}
                                 <li class="box-border">

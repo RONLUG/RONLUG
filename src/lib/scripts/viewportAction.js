@@ -17,7 +17,7 @@ function getIntersectionObserver() {
     },
     { rootMargin: "-100px" },
   );
-  console.log("create observer");
+  // console.log("create observer");
   return observer;
 }
 

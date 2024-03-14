@@ -24,7 +24,6 @@
     let d2023;
     let d2022;
 
-    console.log(projects[0].year);
     if (projects) {
         d2023 = projects.filter((e) => e.year == 2023);
         d2022 = projects.filter((e) => e.year == 2022);
