@@ -11,7 +11,11 @@
     let expandContainer;
 
     function imageLoad() {
+        expandContainer.style.transition = "None";
         expandContainer.style.marginTop = !reveal ? `${-expandContainer.offsetHeight}px` : "0";
+        setTimeout(() => {
+            expandContainer.style.transition = "";
+        }, 0.5);
     }
 
     $: if (expandContainer && expandContainer.offsetHeight) {
@@ -73,12 +77,12 @@
                             <img
                                 id="loadImage"
                                 class="w-[300px] self-center"
-                                src="https://picsum.photos/300/400"
+                                src={imageDefaultPath + data.img + ".png"}
                                 alt="project"
                             />
                         </div>
 
-                        <!-- src={imageDefaultPath + data.img + ".png"} -->
+                        <!-- src="https://picsum.photos/300/400" -->
                         <ul class="mt-4 flex gap-2">
                             {#each data.links as link}
                                 <li class="box-border">
