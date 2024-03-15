@@ -8,4 +8,4 @@ learning opportunities and gain real-world experience.
 **My resume: [ronnakorn_resume.pdf](https://ronlug.vercel.app/ronnakorn_resume.pdf)**\
 **My website: [ronlug.vercel.app](https://ronlug.vercel.app/)**
 
-**You can contact me via: [ronnakorn.lugsamipichate@gmail.com](mailto:ronnakorn.lugsamipichate@gmail.com)**
+**You can contact me via: [ron.lugsami@gmail.com](mailto:ron.lugsami@gmail.com)**
